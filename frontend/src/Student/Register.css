@@ -1,0 +1,182 @@
+/* =====================
+   SIGNUP PAGE LAYOUT
+   ===================== */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Left Side (Image) ===== */
+.signup-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.signup-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensures image covers fully without stretching */
+  filter: none; /* Removes any blur */
+  image-rendering: -webkit-optimize-contrast; /* Makes it crisper in Chrome/Safari */
+  image-rendering: crisp-edges; /* Helps on some browsers */
+  backface-visibility: hidden; /* Reduces minor rendering blur */
+}
+
+
+/* ===== Right Side (Form) ===== */
+.signup-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.signup-logo {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.signup-right h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ===== Form Styling ===== */
+.signup-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 13px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #0098b0;
+  box-shadow: 0 0 6px rgba(0, 152, 176, 0.25);
+}
+
+/* ===== Gender Radio ===== */
+.gender-group {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.gender-group label {
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ===== Password Visibility ===== */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper span {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+/* ===== Buttons ===== */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0098b0;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 152, 176, 0.3);
+  transition: 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #007e94;
+  transform: translateY(-2px);
+}
+
+/* Step Buttons */
+.step-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.step-buttons button:first-child {
+  background-color: #ccc;
+  color: #333;
+  box-shadow: none;
+}
+
+.step-buttons button:first-child:hover {
+  background-color: #b5b5b5;
+}
+
+/* ===== Footer Text ===== */
+.signup-form p {
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.signup-form a {
+  color: #0098b0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-form a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-left {
+    display: none;
+  }
+
+  .signup-right {
+    padding: 25px;
+  }
+
+  .signup-form {
+    max-width: 90%;
+  }
+}

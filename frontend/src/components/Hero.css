@@ -1,0 +1,38 @@
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .highlight {
+    color: #2896aa;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  .register-btn {
+    background-color: #2896aa;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  /* Prevent entire page from sliding when gallery scrolls */
+.hero {
+  overflow-x: hidden; /* ✅ prevents full-page horizontal scroll */
+ margin-top: 90px;
+}

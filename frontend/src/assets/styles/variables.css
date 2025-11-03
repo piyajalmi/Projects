@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #1793b3;
+  --text-color: #333;
+  --input-border: #ccc;
+  --font-family: 'Segoe UI', sans-serif;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+

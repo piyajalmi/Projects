@@ -1,0 +1,114 @@
+/* === Navbar Fix === */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Hero Section (Full Width Banner) === */
+.dashboard-hero {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/loginBg.png") center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* dark overlay for better text readability */
+.dashboard-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* === Text Content === */
+.dashboard-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+  margin-top: -50px; /* Adjust for navbar height */
+}
+
+.dashboard-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.dashboard-content span {
+  color: #00e1e6;
+}
+
+/* === Upload Button === */
+.upload-btn {
+  background: #00a4a8;
+  color: #fff;
+  border: none;
+  padding: 16px 42px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.upload-btn:hover {
+  background: #008b8f;
+  transform: translateY(-2px);
+}
+
+/* === Highlights Section (below hero) === */
+.highlights-section {
+  padding: 60px 80px;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.highlights-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #12777e;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .dashboard-content h1 {
+    font-size: 2rem;
+  }
+  .upload-btn {
+    padding: 12px 32px;
+    font-size: 1rem;
+  }
+  .highlights-section {
+    padding: 40px 20px;
+  }
+}
+.logo {
+  height: 100px;          /* adjust size as needed */
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.logo:hover {
+  transform: scale(1.05); /* subtle zoom effect */
+}

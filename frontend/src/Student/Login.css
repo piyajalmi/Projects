@@ -1,0 +1,137 @@
+/* === Fullscreen Background === */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle dark overlay for readability */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+/* === Login Card === */
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem 3.5rem;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+  backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.login-card img {
+  width: 90px;
+  margin-bottom: 1.2rem;
+}
+
+/* Heading */
+.login-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+/* === Form Inputs === */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-card input:focus {
+  border-color: #007b8e;
+  outline: none;
+}
+
+/* === Password Eye Icon === */
+.login-card form div span {
+  color: #666;
+  transition: color 0.3s;
+}
+
+.login-card form div span:hover {
+  color: #007b8e;
+}
+
+/* === Submit Button === */
+.login-card button {
+  background-color: #007b8e;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 123, 142, 0.3);
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #006676;
+  transform: translateY(-2px);
+}
+
+/* === Text Links === */
+.login-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.login-card a {
+  font-weight: 600;
+  color: #007b8e;
+  text-decoration: none;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 2rem;
+  }
+}

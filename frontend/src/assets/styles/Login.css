@@ -1,0 +1,91 @@
+/* Container with full background */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/images/loginBg.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* White card container in the center */
+.login-card {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  min-height: 500px;
+  text-align: center;
+}
+
+/* Heading */
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.login-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Password field with toggle */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #0d6e8b;
+}
+
+/* Signup link */
+.login-card p {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #555;
+}
+
+.login-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}

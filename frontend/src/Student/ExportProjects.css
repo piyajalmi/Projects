@@ -1,0 +1,102 @@
+/* Container */
+.export-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f9ff;
+  min-height: 100vh;
+}
+
+.export-container h2 {
+  color: #0056b3;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Project Grid */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Project Card */
+.project-card {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Header (Top - Student Name) */
+.card-header {
+  background-color: #e6f0ff !important;
+  color: #007bff !important;          /* blue text */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Card Image */
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Card Footer (Bottom - Project Name) */
+.card-footer {
+  background-color: #e6f0ff !important; /* light blue background for visibility */
+  color: #007bff !important;           /* blue text */
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #0056b3;
+}

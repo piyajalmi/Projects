@@ -1,0 +1,97 @@
+/* Force full page layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* === Background Section === */
+.admin-signup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/loginBg.png") no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* === Transparent Overlay (optional) === */
+.admin-signup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* === Form Container === */
+.form-container {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 90%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* === Heading === */
+.form-container h2 {
+  font-size: 1.9rem;
+  color: #12777e;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* === Input Fields === */
+.form-container input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #00a4a8;
+  box-shadow: 0 0 6px rgba(0, 164, 168, 0.3);
+}
+
+/* === Button === */
+.form-container button {
+  width: 100%;
+  background: #00a4a8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #008b8f;
+  transform: translateY(-2px);
+}

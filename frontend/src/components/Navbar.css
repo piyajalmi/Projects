@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed; /* ✅ keeps navbar in place */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2896aa;
+  
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #2896aa;
+}
+
+.login-btn {
+  background-color: #2896aa;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #1f7d8f;
+}
+
+/* ✅ Prevent horizontal scroll anywhere */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* ✅ Logo Styling */
+.navbar-logo {
+  height: 100px;          /* adjust size as needed */
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05); /* subtle zoom effect */
+}
+
